@@ -37,6 +37,7 @@ namespace AlpineSkiHouse.Web.Tests.Controllers
                     var dateServiceMock = new Mock<IDateService>();
                     dateServiceMock.Setup(d => d.Now()).Returns(DateTime.Now);
 
+
                     var mediatorMock = new Mock<IMediator>();
                     var controller = new ScanCardController(context, mediatorMock.Object, dateServiceMock.Object);
 
